@@ -61,24 +61,6 @@ void movimento_cavalo(int movimentos_vertical_cavalo, int movimento_horizontal_c
 
 }
 
-void movimento_cavalo(int movimentos_vertical_cavalo, int movimento_horizontal_cavalo){
-
-    //Estruturas de repetição aninhadas for e while responsáveis pelos movimentos do Cavalo
-    for(movimentos_vertical_cavalo; movimentos_vertical_cavalo >= 1; movimentos_vertical_cavalo--){
-
-            printf("movimento feito pelo cavalo: cima\n");
-       
-        if(movimentos_vertical_cavalo == 1){
-            while (movimento_horizontal_cavalo < 2)
-            {
-                printf("movimento feito pelo cavalo: direita\n"); 
-                movimento_horizontal_cavalo++;
-            }
-        }
-    }
-
-}
-
 int main() {
     
     movimento_torre(5);//recursividade da Torre
